@@ -4,13 +4,13 @@ import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import RoundBasicCard from '../components/Card/RoundBasicCard';
 import ResponsiveColumns from '../components/FlexGrid/ResponsiveColumns';
-
-
-const features: { name: string; description: string; linkProp: { href: string; text: string } }[] =
+import { FeatureItem } from '../models/RecordItem';
+import BasicFooter from '../components/Layout/BasicFooter';
+const features: FeatureItem[] =
 [
-  { name: 'style-components', description: 'Test out styled-components support in nextjs, and with theming and props support', linkProp: { href: '/features/StyledComponentHome', text: 'styled-components' } },
-  { name: 'Responsive Design', description: 'Test out responsive design', linkProp: { href: '/features/ResponsiveDesign', text: 'responsive design' } }
-  
+  { name: 'style-components', description: 'Test out styled-components support in nextjs, and with theming and props support', linkProp: { href: '/features/StyledComponentHome', text: 'demo' } },
+  { name: 'responsive design', description: 'Test out responsive design', linkProp: { href: '/features/ResponsiveDesign', text: 'demo' } },
+  { name: 'dot env config',description: 'Dot env can help to support different environment', linkProp: { href: '/features/DotEnvConfig', text: 'demo' }  }
 ];
 
 
@@ -38,7 +38,7 @@ export default function Home() {
             <main className={styles.main}>
 
                 <h1 className={styles.title}>
-                    Welcome to <a href='https://nextjs.org'>Next.js 100 chanllagne !</a>
+                    Welcome to <a href='#'>Next.js 100 challenge !</a>
                 </h1>
 
                 <p className={styles.description}>
@@ -46,15 +46,6 @@ export default function Home() {
                 </p>
                 <ResponsiveColumns recordItemWidth={600} records={features.map( ({name,...rest},index)=>({title:name,index, showNumber:true,...rest}))} />
             </main>
-
-            <footer className={styles.footer}>
-                <a href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app' target='_blank' rel='noopener noreferrer'>
-                    Powered by{' '}
-                    <span className={styles.logo}>
-                        <Image src='/vercel.svg' alt='Vercel Logo' width={72} height={16} />
-                    </span>
-                </a>
-            </footer>
         </div>
     );
 }
