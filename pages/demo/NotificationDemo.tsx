@@ -1,15 +1,6 @@
 import { useCallback, useEffect } from 'react';
-import BrowserNotification from '../../utils/BrowserNotification';
 import { Typography, Button } from 'antd';
-
-function useBrowserNotification(): BrowserNotification {
-    const browserNotification = new BrowserNotification();
-    useEffect(() => {
-        browserNotification.requestPermission();
-    }, []);
-
-    return browserNotification;
-}
+import useBrowserNotification from '../../components/Browser/useBrowserNotification';
 
 export default function NotificationDemo() {
     const browserNotification = useBrowserNotification();
@@ -20,11 +11,11 @@ export default function NotificationDemo() {
         }
     }, [browserNotification.permission]);
 
-    const handleOnSendNotification = useCallback(()=>{
+    const handleOnSendNotification = useCallback(() => {
         if (browserNotification.permission === 'granted') {
             browserNotification.openNotification('Click send more Notification');
         }
-    },[browserNotification.permission])
+    }, [browserNotification.permission]);
     return (
         <div className='p-5'>
             <Typography.Title> Notification Demo </Typography.Title>
