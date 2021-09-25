@@ -10,7 +10,8 @@ const features: FeatureItem[] =
 [
   { name: 'style-components', description: 'Test out styled-components support in nextjs, and with theming and props support', linkProp: { href: '/features/StyledComponentHome', text: 'demo' } },
   { name: 'responsive design', description: 'Test out responsive design', linkProp: { href: '/features/ResponsiveDesign', text: 'demo' } },
-  { name: 'dot env config',description: 'Dot env can help to support different environment', linkProp: { href: '/features/DotEnvConfig', text: 'demo' }  }
+  { name: 'dot env config',description: 'Dot env can help to support different environment', linkProp: { href: '/features/DotEnvConfig', text: 'demo' }  },
+  { name: 'markdown in next',description: 'Use markdown in nextjs', linkProp: { href: '/features/MarkDownInNext', text: 'demo' }  }
 ];
 
 
