@@ -8,24 +8,12 @@ import { FeatureItem } from '../models/RecordItem';
 import BasicFooter from '../components/Layout/BasicFooter';
 const features: FeatureItem[] =
 [
-  { name: 'style-components', description: 'Test out styled-components support in nextjs, and with theming and props support', linkProp: { href: '/features/StyledComponentHome', text: 'demo' } },
-  { name: 'responsive design', description: 'Test out responsive design', linkProp: { href: '/features/ResponsiveDesign', text: 'demo' } },
-  { name: 'dot env config',description: 'Dot env can help to support different environment', linkProp: { href: '/features/DotEnvConfig', text: 'demo' }  },
-  { name: 'markdown in next',description: 'Use markdown in nextjs', linkProp: { href: '/features/MarkDownInNext', text: 'demo' }  }
+  { name: 'style-components', description: 'Test out styled-components support in nextjs, and with theming and props support', linkProp: { href: '/demo/StyledComponentDemo', text: 'demo' } },
+  { name: 'responsive design', description: 'Test out responsive design', linkProp: { href: '/demo/ResponsiveDesignDemo', text: 'demo' } },
+  { name: 'dot env config',description: 'Dot env can help to support different environment', linkProp: { href: '/demo/DotEnvConfigDemo', text: 'demo' }  },
+  { name: 'markdown in next',description: 'Use markdown in nextjs', linkProp: { href: '/demo/MarkDownInNextDemo', text: 'demo' }  },
+  { name: 'browser notification',description: 'Test browser notification', linkProp: { href: '/demo/NotificationDemo', text: 'demo' }  }
 ];
-
-
-// [
-//     { name: 'style-components', description: 'Test out styled-components support in nextjs, and with theming and props support', linkProp: { href: '/features/styledComponentHome', text: 'styled-components' } },
-//     { name: 'style-components', description: 'Test out styled-components support in nextjs, and with theming and props support', linkProp: { href: '/features/styledComponentHome', text: 'styled-components' } },
-//     { name: 'style-components', description: 'Test out styled-components support in nextjs, and with theming and props support', linkProp: { href: '/features/styledComponentHome', text: 'styled-components' } },
-//     { name: 'style-components', description: 'Test out styled-components support in nextjs, and with theming and props support', linkProp: { href: '/features/styledComponentHome', text: 'styled-components' } },
-//     { name: 'style-components', description: 'Test out styled-components support in nextjs, and with theming and props support', linkProp: { href: '/features/styledComponentHome', text: 'styled-components' } },
-//     { name: 'style-components', description: 'Test out styled-components support in nextjs, and with theming and props support', linkProp: { href: '/features/styledComponentHome', text: 'styled-components' } },
-//     { name: 'style-components', description: 'Test out styled-components support in nextjs, and with theming and props support', linkProp: { href: '/features/styledComponentHome', text: 'styled-components' } }
-// ];
-
-
 
 export default function Home() {
     return (
