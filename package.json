@@ -19,6 +19,8 @@
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@heroicons/react": "^1.0.4",
+    "@mdx-js/loader": "^1.6.22",
+    "@next/mdx": "^11.1.2",
     "@types/lodash.chunk": "^4.2.6",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-less": "^1.0.1",
