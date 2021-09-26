@@ -1,6 +1,10 @@
 {
   "name": "next-challenge-100",
   "version": "0.1.0",
+  "homepage": "https://next-challenge-100.herokuapp.com/",
+  "engines":{
+    "node":">=14.0.0"
+  },
   "author": {
     "email": "zachyu.tw@gmail.com",
     "name": "Zach Yu"
@@ -9,7 +13,7 @@
     "type": "git",
     "url": "https://github.com/zachyutw/next-challenge-100.git"
   },
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
