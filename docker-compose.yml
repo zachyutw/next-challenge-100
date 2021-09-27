@@ -1,0 +1,12 @@
+version: "3.5"
+
+services:
+    nextcnallenge100:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: nextcnallenge100:dev
+        container_name: nextcnallenge100
+        restart: always
+        ports:
+            - 3000:3000
