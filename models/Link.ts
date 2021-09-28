@@ -1,5 +1,5 @@
 export interface LinkProp {
-    href: string;
+    href?: string;
     text: string;
     defaultHref?: string;
 }

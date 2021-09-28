@@ -1,3 +1,5 @@
+import { LinkProp } from './Link';
+
 export interface RecordItemHandlerProps<T = any> {
     record?: T;
     index?: number;
@@ -7,5 +9,5 @@ export interface RecordItemHandlerProps<T = any> {
 export interface FeatureItem {
     name: string;
     description: string;
-    linkProp: { href: string; text: string };
+    linkProp: LinkProp;
 }

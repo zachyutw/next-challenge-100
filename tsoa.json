@@ -1,0 +1,17 @@
+{
+    "entryFile": "index.ts",
+    "noImplicitAdditionalProperties": "silently-remove-extras",
+    "spec": {
+        "outputDirectory": "server/openapi",
+        "specVersion": 3.0,
+        "spec": {
+            "servers": [{ "url": "/api" }]
+        }
+    },
+    "routes": {
+        "basePath": "/api",
+        "routesDir": "server/routes",
+        "middleware": "express",
+        "controllerPathGlobs": "server/controllers/**/*.controller.ts"
+    }
+}
